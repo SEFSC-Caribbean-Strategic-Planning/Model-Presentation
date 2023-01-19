@@ -1,0 +1,12 @@
+category,title,region,fleet,mode,metrics,organizations,status,start_year,image
+Fishery Dependent,USVI Commercial & Recreational Dockside Intercept Survey,USVI,"Commercial, Recreational",Vessel,"Catch, Effort, Size Comp","SEFSC, CIMAS, USVI DFW",In Progress,2021,kitten-300-200.jpeg
+Fishery Dependent,USVI Commercial Trip Interview Program,USVI,Commercial,Vessel,Size Comp,"SEFSC, USVI DWF",In Progress,1985,
+Fishery Dependent,USVI Commercial Logbook Program,USVI,Commercial,"Vessel, Shoreline","Catch, Effort","SEFSC, USVI DWF",In Progress,1974,kitten-300-200.jpeg
+Fishery Dependent,USVI Commercial Lobster Trap Size-Selectivity,USVI,Commercial,Vessel,Size Comp,"SEFSC, CIMAS, USVI DWF, NPS, UVI",In Progress,2022,kitten-300-200.jpeg
+Fishery Dependent,PR Commercial Dockside Intercept Survey,PR,Commercial,Vessel,"Catch, Effort","MER, SEFSC",In Progress,2016,kitten-300-200.jpeg
+Fishery Dependent,PR Recreational Dockside Intercept Survey,PR,Recreational,Vessel,"Catch, Effort, Size Comp","PR DNER, MER, SEFSC, CIMAS",In Progress,2022,kitten-300-200.jpeg
+Fishery Dependent,PR Commercial Trip Interview Program,PR,Commercial,Vessel,Size Comp,"SEFSC, PR DNER",In Progress,1985,kitten-300-200.jpeg
+Fishery Dependent,PR Commercial Logbook Program,PR,Commercial,"Vessel, Shoreline","Catch, Effort","SEFSC, PR DNER",In Progress,1979,kitten-300-200.jpeg
+Fishery Dependent,PR Commercial Lobster Trap Size-Selectivity,PR,Commercial,Vessel,Size Comp,"SEFSC, MER",In Progress,2022,kitten-300-200.jpeg
+Fishery Dependent,USVI Auxiliary Surveys for Total Effort and Price/Cost,USVI,Commercial,Vessel,"Effort, Price/Cost","SEFSC, CIMAS, USVI DWF",Planned,2024,kitten-300-200.jpeg
+Fishery Dependent,PR & USVI Shoreline Intercept Surveys,"PR, USVI",Recreational,Shoreline,"Catch, Effort, Size Comp","NOAA S&T, SEFSC, CIMAS, USVI DWF",Planned,2025,kitten-300-200.jpeg
