@@ -1,0 +1,28 @@
+---
+title: "Projects"
+author: "Caribbean Fisheries Branch"
+format: revealjs
+---
+
+```{r warning=FALSE, echo=FALSE, message=FALSE, results ='asis'}
+library(tidyverse)
+
+csp_projects <- read.csv("Fishery-Dependent.csv")
+group = c(unique(csp_projects$category))
+
+for (i in 1:length(group)) {
+  cat('\n#', group[i], '\n')
+  csp_group = csp_projects %>% filter(category == group[i])
+  
+  for (j in 1:length(csp_group$title)){
+    cat('\n##', csp_projects$title[j], '\n')
+    cat('\n####', group[i], '\n')
+    cat('-', csp_projects$region[j], '\n')
+    cat('-', csp_projects$metrics[j], '\n')
+    cat('-', csp_projects$organizations[j], '\n')
+    cat('-', csp_projects$status[j], '\n')
+    cat('-', csp_projects$start_year[j], '\n')
+    cat('![](', paste0(" images/", csp_projects$image[j]), '){.absolute  bottom="110" right="130" width="300"}', '\n')
+  }
+}
+```
