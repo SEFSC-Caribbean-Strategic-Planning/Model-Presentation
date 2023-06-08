@@ -5,24 +5,29 @@ format: revealjs
 ---
 
 ```{r warning=FALSE, echo=FALSE, message=FALSE, results ='asis'}
-library(tidyverse)
+librarian::shelf(tidyverse, readxl)
 
-csp_projects <- read.csv("Fishery-Dependent.csv")
-group = c(unique(csp_projects$category))
+sheets = excel_sheets("Model-Presentation.xlsx")
+slides = map_dfr(.x = set_names(sheets),
+               read_excel, 
+               path = "Model-Presentation.xlsx", 
+               .id = 'category')
+
+group = c(unique(slides$category))
 
 for (i in 1:length(group)) {
   cat('\n#', group[i], '\n')
-  csp_group = csp_projects %>% filter(category == group[i])
+  csp_group = slides %>% filter(category == group[i])
   
   for (j in 1:length(csp_group$title)){
-    cat('\n##', csp_projects$title[j], '\n')
+    cat('\n##', slides$title[j], '\n')
     cat('\n####', group[i], '\n')
-    cat('-', csp_projects$region[j], '\n')
-    cat('-', csp_projects$metrics[j], '\n')
-    cat('-', csp_projects$organizations[j], '\n')
-    cat('-', csp_projects$status[j], '\n')
-    cat('-', csp_projects$start_year[j], '\n')
-    cat('![](', paste0(" images/", csp_projects$image[j]), '){.absolute  bottom="110" right="130" width="300"}', '\n')
+    cat('-', slides$region[j], '\n')
+    cat('-', slides$metrics[j], '\n')
+    cat('-', slides$organizations[j], '\n')
+    cat('-', slides$status[j], '\n')
+    cat('-', slides$start_year[j], '\n')
+    cat('![](', paste0(" images/", slides$image[j]), '){.absolute  bottom="110" right="130" width="300"}', '\n')
   }
 }
 ```
